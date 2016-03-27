@@ -59,50 +59,49 @@ html {
 /* 完成初始化，消除各浏览器差异 */
 
 .header{
-	height: 80px;
+	height: 50px;
 	background-color: black;
 }
 
 .header img{
-	width: 230px;
+	width: 180px;
 	display: inline;
 	position: relative;
-	top: -75px;
+	top: -70px;
 	left: 20px;
 }
 .nav{	
 	/*将导航列表垂直居中，针对单行元素，设置行高与父元素高度相同*/
-	line-height: 80px;
+	line-height: 50px;
 	float: right;
-	margin-right: 30px;
+	margin-right: 20px;
 
 }
 
 .nav li{
 	float: left;
-	margin-right: 30px;
+	margin-right: 20px;
 }
 .nav a{
 	font-family: Helvetica, Arial black,sans-serif;
-	font-size: 2.2em;
+	font-size: 1.6em;
 	color: #AAA8A8;
 }
-a:hover{
+.nav a:hover{
 	color: white;
 	font-weight: bold;
 }
 .main{
 	background-color: #ccc;
 	padding: 20px;
-	/*float: left;*/
 }
 
 .page-sidebar{
-	margin:20px;
+	margin:10px;
 }
 .page-sidebar li{
 	font-family: Helvetica,Arial black,sans-serif;
-	font-size: 3em;
+	font-size: 2em;
 	font-weight: bold;
 	padding: 10px;
 	padding-left: 15px;
@@ -112,7 +111,7 @@ a:hover{
 }
 
 .right{
-	width:498px;
+	width:358px;
 	/*height: 298px;*/
 	float: right;
 	background-color: white;
@@ -122,28 +121,28 @@ a:hover{
 	box-shadow: 2px 2px #aaa;
 }
 .subform{
-	font-size: 2em;  
+	font-size: 1.5em;  
 }
 
 .subform p{
-	margin: 10px 40px; 
+	margin: 10px; 
 }
 .subform .lable{
-	width: 150px;
+	width: 120px;
 	float: left;
-	margin-right: 15px;
+	margin-right: 10px;
 	text-align: right;
 	font-weight: bold;
 }
 
 .subform .tip{
-	margin-left: 165px;
+	margin-left: 130px;
 	color: #999;
 	font-size: .9em;
 	margin-bottom: 10px;
 }
 #emailaddress,#password,#passwordagain,#comments{
-	width: 250px;
+	width: 180px;
 }
 /*鼠标指向文本框时锁定颜色*/
 #emailaddress:focus,
@@ -155,19 +154,22 @@ a:hover{
 }
 .submit{
 	/*与父元素宽度相同*/
-	width:100%;
-	margin:10px 0 20px 0;
-	height: 60px;
+	width:300px;
+/*	margin-bottom:5px;
+	margin-left: 30px;*/
+	margin-left: 19px;
+	height: 40px;
 	font-size: 1.2em;
 	font-weight: bold;
 	color: white;
 	background-color: #3355D0;
 	border-radius: 15px;
+
 }
 
 .left{
 	border:1px solid #ccc;
-	margin-right: 520px;
+	margin-right: 380px;
 }
 
 .part1{
@@ -180,29 +182,29 @@ a:hover{
 
 .left h1{
 	font-family: Arial black, Arial, sans-serif;
-	font-size: 3em;
+	font-size: 2em;
 	font-weight: bold;
-	margin:10px 0;
+	/*margin:10px 0;*/
 }
 .left h2{
 	font-family: Arial black,Arial,sans-serif;
-	font-size: 2.5em;
+	font-size: 1.5em;
 	font-weight: bold;
-	margin: 10px 0;
+	margin: 5px 0;
 	color: #656464;
 }
 .left p{
 	font-family: Arial black,Arial,sans-serif;
-	font-size: 2em;
-	margin: 10px 0;
+	font-size: 1.3em;
+	margin-bottom: 5px;
 	color: #878686;
 }
 
 .left .p1{
 	font-family: Helvetica,Arial black,sans-serif;
-	font-size: 2.2em;
+	font-size: 1.5em;
 	/*右行高控制行间距，默认为120%*/
-	line-height: 200%;
+	line-height: 150%;
 	color: #303030;
 	text-indent: 2em;
 }
@@ -229,7 +231,6 @@ a:hover{
 	font-size: 1.35em;
 	color: #303030;
 	margin-left: 20px;
-	margin-bottom: 10px;
 	margin-top: 10px;
 }
 .list li{
@@ -248,12 +249,12 @@ a:hover{
 }
 .gallery{
 	float: left;
-	/*width: 220px;
-	height: 220px;*/
+/*	width: 222px;
+	height: 193px;*/
 	padding: 10px;
 	border:1px solid #eee;
 	background-color: #EAECEC;
-	margin: 0 40px 40px 0;
+	margin: 0 20px 20px 0;
 	box-shadow: 2px 2px #D3D1D1;
 }
 .gallery p{
@@ -265,8 +266,10 @@ a:hover{
 	margin-top: 0;
 }
 .gallery img{
-	width: 300px;
-	height: 250px;
+	width: 200px;
+	height: 180px;
+	/*max-width:200px;*/
+	/*max-height: 150px;*/
 }
 .part4{
 	background-color: white;
@@ -277,7 +280,7 @@ a:hover{
 
 .part4 .list{
 	list-style-type: decimal;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 	padding-left: 20px;
 }
 
@@ -320,14 +323,14 @@ td{
 
 .footer{
 	/*内部文字只有一行，将height和文字行高line-height设置一样即可*/
-	height: 80px;
-	line-height: 80px;
+	height: 50px;
+	line-height: 50px;
 	background-color: black;
 	position: relative;
 	bottom: 0;
 	color: white;
 	font-weight: bold;
-	font-size: 2.5em;
+	font-size: 1.8em;
 	text-align: center;
 	/*padding: 10px 0;*/
 }
